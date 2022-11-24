@@ -10,7 +10,6 @@ function AddFoodForm({setFood}) {
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log({name, image, calories, servings})
         setFood((currentState) => {
             const copy = [...currentState]
             copy.unshift({name, image, calories, servings})
